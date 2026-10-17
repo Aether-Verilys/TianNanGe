@@ -1,0 +1,42 @@
+# Unity regenerates these directories when opening the project.
+/Project_TianNanGe/[Ll]ibrary/
+/Project_TianNanGe/[Tt]emp/
+/Project_TianNanGe/[Oo]bj/
+/Project_TianNanGe/[Ll]ogs/
+/Project_TianNanGe/[Uu]ser[Ss]ettings/
+/Project_TianNanGe/[Bb]uild/
+/Project_TianNanGe/[Bb]uilds/
+/Project_TianNanGe/MemoryCaptures/
+/Project_TianNanGe/Recordings/
+
+# Generated IDE projects and local editor preferences.
+**/.vs/
+**/.vscode/
+**/.idea/
+/Project_TianNanGe/*.csproj
+/Project_TianNanGe/*.sln
+/Project_TianNanGe/*.slnx
+/Project_TianNanGe/*.suo
+/Project_TianNanGe/*.user
+/Project_TianNanGe/*.userprefs
+/Project_TianNanGe/*.pidb
+/Project_TianNanGe/*.booproj
+/Project_TianNanGe/*.svd
+/Project_TianNanGe/*.opendb
+/Project_TianNanGe/*.VC.db
+
+# Unity CLI screenshot staging; curated previews live in /captures/.
+/Project_TianNanGe/Assets/Captures/
+/Project_TianNanGe/Assets/Captures.meta
+
+# Generated crash/debug data and Python bytecode.
+/Project_TianNanGe/sysinfo.txt
+/Project_TianNanGe/mono_crash.*
+__pycache__/
+*.py[cod]
+
+# Operating-system metadata.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
