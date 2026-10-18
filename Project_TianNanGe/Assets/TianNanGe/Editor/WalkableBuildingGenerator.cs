@@ -63,6 +63,9 @@ public static class WalkableBuildingGenerator
                 baseY, level == 0 ? doorWidth : Mathf.Min(doorWidth * .8f, width * .34f), level == 0);
         }
 
+        if (floors > 1)
+            BuildInteriorStairs(visual, collision, width, depth, wallHeight, floorThickness, floors);
+
         // A short covered entry porch is kept open at the front, making the entrance obvious.
         if (addPorch)
             BuildPorch(visual, collision, width, depth, wallHeight);
@@ -74,6 +77,30 @@ public static class WalkableBuildingGenerator
         string path = PrefabFolder + "/" + name + ".prefab";
         PrefabUtility.SaveAsPrefabAsset(root, path);
         UnityEngine.Object.DestroyImmediate(root);
+    }
+
+    private static void BuildInteriorStairs(Transform visual, Transform collision, float width, float depth,
+        float wallHeight, float floorThickness, int floors)
+    {
+        // Compact steps run up the left side of the room. They are deliberately kept
+        // clear of the front door and use the same collision hierarchy as the walls.
+        const int stepsPerFloor = 9;
+        float run = Mathf.Max(1.4f, depth * .58f);
+        float stepDepth = run / stepsPerFloor;
+        float stepWidth = Mathf.Min(1.25f, width * .24f);
+        for (int floor = 0; floor < floors - 1; floor++)
+        {
+            float baseY = floor * (wallHeight + floorThickness);
+            float startZ = -depth * .22f;
+            for (int i = 0; i < stepsPerFloor; i++)
+            {
+                float h = (i + 1) * (wallHeight + floorThickness) / stepsPerFloor;
+                float z = startZ + (i + .5f) * stepDepth;
+                float x = -width * .27f;
+                Part(visual, "Stair", new Vector3(x, baseY + h * .5f, z), new Vector3(stepWidth, h, stepDepth), timber);
+                BoxColliderPart(collision, "Stair", new Vector3(x, baseY + h * .5f, z), new Vector3(stepWidth, h, stepDepth));
+            }
+        }
     }
 
     private static void BuildLevel(Transform root, Transform visual, Transform collision,
