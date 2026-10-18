@@ -56,11 +56,11 @@
 
 文档已整合到本文件，旧拆分文档已移除。主场景已接入 Kloofendal HDRI 天空、MAXDESIGN-3D 临时动画龙和 Little Green，主要场景分组已保存为 Prefab。
 
-- 主场景：`Assets/TianNanGe/Scenes/TianNanGe_Main.unity`，包含桥、临时动画龙、Little Green、四组楼阁、雪层、冷暖方向光与距离雾。
+- 主场景：`Assets/TianNanGe/Scenes/TianNanGe_Main.unity`，包含 38 米雪桥、两端连接台、六组雪山岩体、临时动画龙、持剑 Little Green、四组楼阁、冷暖方向光与距离雾。
 - 当前龙节点：`TianNanGe_Blockout/Dragon/Temporary_MAXDESIGN_ReplaceWithTripo/Visual`。原龙白盒 `Proxy_ReplaceWithTripo` 与 NSSM 低模均保留、禁用备用；后续仍沿用 `Dragon` 父节点。人物与建筑替换入口为 `Character`、`Architecture`，建筑代理位于各楼阁子组下。
 - [当前人物预览](../captures/little-green-play.png)为 Little Green 的 Play Mode 截图；[临时龙阶段预览](../captures/tiannange-temporary-dragon.png)、[HDRI 白盒预览](../captures/tiannange-hdri.png)与[首版白盒预览](../captures/tiannange-blockout.png)保留为基线。输出沿用 `1280 × 620`，相机直接渲染，无外部调色。
 - 当前相机位置 `(0, 0.88, -4.6)`，朝向 `(0, 1.24, 0)`，垂直 FOV `32°`；固定曝光 EV `12`。画质为 HDRP High Fidelity，Linear 色彩空间，在 Apple M5 编辑器中检查；天空、光照与雾参数见下方 HDRI 配置。
-- 主场景的 `Global Look` 当前使用 `Assets/TianNanGe/Lighting/KloofendalSkyVolume.asset`；原 `BlockoutVolume.asset` 保留作为白盒基线。
+- 主场景的 LightingRig 已嵌套 `Assets/TianNanGe/Prefabs/Lighting/TianNanGeVolume.prefab`，分为 Sky、Fog、Shadow、Post、Lens 五层；原 `Global Look` 保留但禁用。参数及调节说明见 [Volume 配置](../Project_TianNanGe/Assets/TianNanGe/Lighting/VolumeProfiles/README.md)。
 - 构建脚本：`Project_TianNanGe/AgentScripts/BuildTianNanGeBlockout.cs`。通过 Pipeline `run_script` 调用 `BuildTianNanGeBlockout.Build`，存在同名场景时会拒绝覆盖；日常调整直接编辑已保存场景。
 - 临时龙阶段已检查编译、截图与资源引用，并完成 Play Mode 验证：Idle 与备用 Sway 均有骨骼运动，默认播放时承载节点固定，Console 为 `0 error / 0 warning`。Little Green 于北京时间 `2026-10-18` 完成 Play Mode 输入模拟验证，`16/16` 项通过：四方向移动、松键停止与回 Idle、斜向速度归一化、Humanoid 骨骼运动、持续落地及左栏杆阻挡。验证后已恢复角色位置与输入状态；未测量实际 FPS。
 - 新增 `com.unity.pipeline` `0.8.0-exp.1` 用于 CLI 操作。截图工具临时输出到 `Assets/Captures/`，交付截图整理到仓库根目录 `captures/`。
@@ -69,21 +69,36 @@
 ### Little Green 与场景 Prefab
 
 - **人物与动画**：模型为 `Assets/Character/little+green/tripo_convert_4dee5643-20cb-465c-a529-88f2794a3fe2.fbx`，已有有效 Humanoid Avatar。`Assets/Animations/X Bot@Walking.fbx` 已重新导入为 Humanoid / Create From This Model；`Walking` 为 30 fps、第 `0–29` 帧、约 `0.967 s`，启用循环。`Assets/TianNanGe/Characters/LittleGreen/LittleGreen.controller` 以 `Speed` 切换 Idle 与 Walking：两者均使用 Walking 片段，Idle 以播放速度 `0` 冻结第一帧作为松键后的暂用站姿，Walking 以速度 `1` 播放；尚无独立待机动画，后续可替换。
-- **移动与碰撞**：`TianNanGe_Blockout/Character` 使用 `Visual_LittleGreen`，旧 `Proxy_ReplaceWithTripo` 已禁用。根节点挂载 `CharacterController` 与 `CharacterWASDController`，复用 `InputSystem_Actions` 的 `Player/Move` WASD 绑定；按相机水平朝向移动，未指定相机时使用主相机，输入缺失时回退到键盘。移动速度 `1.5 m/s`、重力 `20 m/s²`，关闭 Root Motion。桥面 BoxCollider、左右栏杆碰撞与 `SnowCourtyard` 碰撞已配置。
+- **移动与碰撞**：`TianNanGe_Blockout/Character` 使用 `Visual_LittleGreen`，旧 `Proxy_ReplaceWithTripo` 已禁用。根节点挂载 `CharacterController` 与 `CharacterWASDController`，复用 `InputSystem_Actions` 的 `Player/Move` WASD 绑定；按相机水平朝向移动，未指定相机时使用主相机，输入缺失时回退到键盘。移动速度 `1.5 m/s`、重力 `20 m/s²`，关闭 Root Motion。桥面与左右栏杆碰撞覆盖全部 38 米桥长，近远桥台及山体雪顶有碰撞；旧 `SnowCourtyard` 已禁用。
 - **编辑约定**：`Project_TianNanGe/AgentScripts/SetupLittleGreenAndPrefabs.cs` 的 `Setup` 在 Little Green Prefab 已存在时拒绝重复安装；`RefineInstalledCharacter` 用于显式调整已安装角色，会重设站姿、缩放、控制参数与碰撞并保存相关 Prefab，手调后不要盲目重跑。日常修改直接编辑现有场景或 Prefab。
 
-共 11 个 Prefab，统一位于 `Assets/TianNanGe/Prefabs/`，并已连接对应场景对象：
+共 13 个 Prefab，统一位于 `Assets/TianNanGe/Prefabs/`，并已连接对应场景对象：
 
 | 分类 | Prefab |
 | --- | --- |
 | Characters | `LittleGreen.prefab` |
-| Environment | `Bridge.prefab`、`Dragon.prefab` |
+| Environment | `Bridge.prefab`、`Dragon.prefab`、`Mountains.prefab` |
+| Props | `HandSword.prefab` |
 | Architecture | `MainPavilion.prefab`、`LeftPavilion.prefab`、`FarPavilion.prefab`、`FarRight.prefab`、`SnowCourtyard.prefab` |
 | Lighting / Cameras | `Lighting/LightingRig.prefab`、`Lighting/StaticLightingSky.prefab`、`Cameras/CameraRig.prefab` |
 
+### 桥、山体与佩剑（2026-10-18）
+
+- **桥与两岸**：桥面由 17 米延长为 38 米，Z 范围 `-16.5…21.5`，保持 2.7 米宽；连续双侧栏杆、雪帽、两端连接平台/端墙已保存到 `Bridge.prefab`。近远桥台分别位于 Z `-18 / 23`，尺寸 `6 × 4.5 m`，通过同高雪面与两岸陆地衔接。
+- **楼阁山体**：新增 `Mountains.prefab`，包含四座楼阁下的 18–24 米分层岩崖与近远两岸岩体，使用独立岩石网格、几何雪帽及 MeshCollider。雪顶接实楼阁基座；原大平板 `Architecture/SnowCourtyard` 保留但禁用。当前是可继续细化的低多边形大形，不是最终山石精模。
+- **佩剑**：`Assets/TianNanGe/Prefabs/Props/HandSword.prefab` 为独立可复用资产，约 1 米长，握柄中心为 pivot，本地 `+Y` 指向剑尖。子组包含 `Scabbard`、`Blade`、`Hilt`、`Tassel`；默认带鞘，切换 `Scabbard`/`Blade` 可展示裸刃。已作为嵌套预制体挂到 Little Green 的 `mixamorig:RightHand/SwordSocket`，挂点与剑的姿态保存在 `LittleGreen.prefab`；当前人物模型缩放为 2，所以剑实例使用 0.5 本地缩放以维持 1 米世界尺度。更换人物骨架后需重新校准挂点。
+- **验证**：`VerifySceneImprovements.Verify` 完成 38/38 项结构/资源检查，包括四座楼阁各五点的山顶承托射线、完整桥面/护栏碰撞与嵌套剑资产引用；复用人物 Play Mode 验证，16/16 通过。确认帧计数持续推进、佩剑世界尺度为 1 并随右手挂接；当前 Console ground truth 为 0 error / 0 warning。验证后已退出 Play Mode，主相机与人物位置恢复。
+- **工具与预览**：编辑脚本在 `AgentScripts/ExtendBridge.cs`、`ImproveMountainSetting.cs`、`CreateHandSword.cs`、`AttachHandSword.cs`。前三个生成入口拒绝覆盖已有内容；`AttachHandSword.Apply` 会显式重设挂点，请勿在手调后盲目重跑。[当前人物与佩剑](../captures/tiannange-improvements-play.png)为 Play Mode 屏幕截图；[桥与山体全景](../captures/tiannange-mountain-overview.png)为临时俯视镜头，仅用于查看场景结构，正式主镜头未改。
+
+### Snow 风格 Volume 优化（2026-10-19）
+
+新增独立 `TianNanGeVolume.prefab` 与五个原生 HDRP 17 Profile，已嵌入 LightingRig。采用体积高度雾、AO / 微阴影 / 接触阴影、冷阴影暖高光调色、轻微 Bloom / 暗角 / 颗粒，固定曝光保持 EV12，动态模糊与景深显式关闭。Sun 接触阴影已开启，阴影分辨率提升到 2048；当前主场景相机为 SMAA High，并开启 Dithering。
+
+Play Mode 已确认帧计数推进、最终 Volume Stack 参数和渲染开关有效，Console 当前实际计数为 0 error / 0 warning。验证后已退出 Play Mode。[优化前](../captures/tiannange-volume-before.png)、[优化后](../captures/tiannange-volume-after.png)为同镜头对比；[运行预览](../captures/tiannange-volume-play-camera.png)为 1280×720 相机输出。更多参数、共用 LightingRig 的影响范围与旧配置切换方法见 [Volume 配置](../Project_TianNanGe/Assets/TianNanGe/Lighting/VolumeProfiles/README.md)。
+
 ## 技术需求与资源选型
 
-优先级：P0 为当前先验证，P1 为主体细化阶段，P2 为后续增强。HDRI 天空已接入；以下体积云雾和材质方案仍待验证，尚未启用真实体积云雾或导入第三方云雾工程。
+优先级：P0 为当前先验证，P1 为主体细化阶段，P2 为后续增强。HDRI 天空与全局体积高度雾已接入；以下局部体积云雾和材质方案仍待验证，尚未导入第三方云雾工程。
 
 | 需求 | 推荐技术 | 难点与资源需求 | 优先级 |
 | --- | --- | --- | --- |

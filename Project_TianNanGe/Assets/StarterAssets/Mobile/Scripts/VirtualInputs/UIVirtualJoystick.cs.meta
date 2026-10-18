@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f2cb8c4d669392748bb924209de33b85
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20005950
+  packageName: "Starter Assets - ThirdPerson | URP  \u521D\u59CB\u8D44\u4EA7 - \u7B2C\u4E09\u4EBA\u79F0\u63A7\u5236\u5668"
+  packageVersion: 1.1.7
+  assetPath: Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs
+  uploadId: 0
