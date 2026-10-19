@@ -1,0 +1,52 @@
+{
+  "reference_source": "4TianNan1_4k_fb78c.jpg",
+  "reference_image": "SourceAssets/Tripo/MainPavilion01/main-pavilion-reference.png",
+  "reference_generation": {
+    "task_id": "5312b1ac-67d8-4770-9ae2-73d2a9d7f714",
+    "input": {
+      "prompt": "Extract ONLY the large Chinese timber pavilion in the upper RIGHT background. Reconstruct ONE complete isolated three-storey building, including portions hidden by the woman, dragon and bridge. Preserve the broad rectangular proportions, three layered sweeping blue-grey tiled roofs, sharp upturned eaves, ridge ornaments, recessed top floor, dark weathered timber, restrained brown-gold columns, lattice windows, balconies and dougong brackets. Light irregular snow on roofs and ledges; retain visible tiles. Complete the lower floor with a shallow stone plinth and short front steps. Single coherent building, front three-quarter view showing a little right side, mild long-lens perspective, full silhouette with padding. Clean realistic material details, neutral diffuse studio lighting, plain light grey background. No people, dragon, ropes, bridge, landscape, neighboring buildings, text, watermark, fog, floating parts or cropped geometry. One asset image for 3D reconstruction, not a collage or multiview sheet.",
+      "model_version": "seedream_v5"
+    },
+    "status": "success",
+    "credits_consumed": 5,
+    "created_at": "2026-10-19T03:21:39.170364Z",
+    "completed_at": "2026-10-19T03:21:59.602358Z"
+  },
+  "model_generation": {
+    "model": "v3.1-20260211",
+    "source_task_id": "c50ac209-f9ab-4f4c-bb5a-fadffea83ff9",
+    "conversion_task_id": "d4fc07e6-e763-424f-ba27-e0f190d67104",
+    "status": "success",
+    "credits_breakdown": [
+      {
+        "task_id": "c50ac209-f9ab-4f4c-bb5a-fadffea83ff9",
+        "type": "image_to_model",
+        "credits_consumed": 40
+      },
+      {
+        "task_id": "d4fc07e6-e763-424f-ba27-e0f190d67104",
+        "type": "convert_model",
+        "credits_consumed": 10
+      }
+    ]
+  },
+  "total_credits": 55,
+  "unity_asset": "Project_TianNanGe/Assets/TianNanGe/Tripo/MainPavilion01/MainPavilion_H31.fbx",
+  "verified_texture_dimensions": [
+    2048,
+    2048
+  ],
+  "source_pbr_maps": [
+    "basecolor",
+    "normal",
+    "metallic",
+    "roughness"
+  ],
+  "hdrp_mask_map": {
+    "R": "metallic",
+    "G": "1 (no AO supplied)",
+    "B": "1",
+    "A": "1 - roughness"
+  },
+  "source_triangles": 1424486
+}

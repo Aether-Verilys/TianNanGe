@@ -1,0 +1,48 @@
+{
+  "dry_run": true,
+  "valid": true,
+  "input": "SourceAssets/Tripo/MainPavilion01/main-pavilion-reference.png",
+  "model": "v3.1-20260211",
+  "model_reason": "explicit --model",
+  "steps": [
+    {
+      "name": "image-to-model",
+      "endpoint": "/v3/generation/image-to-model",
+      "task_type": "image_to_model",
+      "payload": {
+        "input": "<upload:SourceAssets/Tripo/MainPavilion01/main-pavilion-reference.png>",
+        "model": "v3.1-20260211",
+        "texture": true,
+        "pbr": true,
+        "texture_quality": "detailed",
+        "texture_alignment": "original_image",
+        "orientation": "align_image"
+      }
+    },
+    {
+      "name": "convert",
+      "endpoint": "/v3/models/convert",
+      "task_type": "convert_model",
+      "payload": {
+        "input": "<upstream>",
+        "format": "FBX",
+        "texture_size": 2048,
+        "texture_format": "PNG",
+        "pivot_to_center_bottom": true
+      }
+    }
+  ],
+  "pending_uploads": [
+    "SourceAssets/Tripo/MainPavilion01/main-pavilion-reference.png"
+  ],
+  "deliverables": [],
+  "candidates": 1,
+  "warnings": [
+    "non-default convert options use the \"complex convert\" price tier"
+  ],
+  "errors": [],
+  "cost_notes": [
+    "texture_quality detailed: higher price tier",
+    "non-default convert options bill as complex convert"
+  ]
+}

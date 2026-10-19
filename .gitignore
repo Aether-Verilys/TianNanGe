@@ -28,6 +28,22 @@
 # Unity CLI screenshot staging; curated previews live in /captures/.
 /Project_TianNanGe/Assets/Captures/
 /Project_TianNanGe/Assets/Captures.meta
+/Project_TianNanGe/Assets/Screenshots/
+/Project_TianNanGe/Assets/Screenshots.meta
+
+# Intermediate scene checks; keep the final Tripo preview in version control.
+/captures/tiannange-improvements-play.png
+/captures/tiannange-mountain-overview.png
+/captures/tiannange-reference-composition.png
+/captures/tiannange-volume-after.png
+/captures/tiannange-volume-before.png
+/captures/tiannange-volume-play-camera.png
+
+# Local Tripo exports duplicate the curated Unity assets and reference images.
+/SourceAssets/Tripo/**/tripo-out/
+/SourceAssets/Tripo/**/textures/
+/SourceAssets/Tripo/**/*-progress.log
+/SourceAssets/Tripo/**/*-result.json
 
 # Generated crash/debug data and Python bytecode.
 /Project_TianNanGe/sysinfo.txt
