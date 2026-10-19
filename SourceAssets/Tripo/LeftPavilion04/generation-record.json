@@ -1,0 +1,404 @@
+{
+  "building_id": "LeftPavilion04",
+  "reference_source": "4TianNan1_4k_fb78c.jpg",
+  "reference_image": "SourceAssets/Tripo/LeftPavilion04/left-pavilion-reference.png",
+  "reference_prompt": "Extract and complete ONE Chinese timber side pavilion from the architecture behind the dragon on the LEFT. Compact three-storey building with three broad sweeping blue-grey tiled roofs, the uppermost storey smaller, upturned ridge ends, exposed dark timber columns, muted ochre brackets, lattice windows and slender open balcony railings. Rectangular plan, shallow stone base and front steps. Reconstruct obscured parts consistently. Light patchy snow on roofs and ledges, visible tile courses. Full single-building silhouette with padding, near-front three-quarter view with little right side visible, mild long-lens perspective. Realistic material details, neutral diffuse studio lighting, plain light grey background. No people, dragon, bridge, ropes, landscape, neighboring buildings, text, watermark, detached parts or collage. One asset for 3D reconstruction.",
+  "reference_generation": {
+    "type": "image_to_image",
+    "status": "success",
+    "task_id": "f56c9dd8-008c-41b4-a6d5-d58bc2f7d3e1",
+    "created_at": "2026-10-19T06:11:53.076365Z",
+    "completed_at": "2026-10-19T06:12:23.166794Z",
+    "credits_consumed": 5,
+    "output_dir": "SourceAssets/Tripo/LeftPavilion04/artifacts/reference",
+    "files": [
+      "SourceAssets/Tripo/LeftPavilion04/artifacts/reference/generated_image.png",
+      "SourceAssets/Tripo/LeftPavilion04/artifacts/reference/preview.png"
+    ],
+    "preview": "SourceAssets/Tripo/LeftPavilion04/artifacts/reference/preview.png"
+  },
+  "model_generation": {
+    "model": "v3.1-20260211",
+    "texture_quality": "extreme",
+    "pbr": true,
+    "candidates": 1,
+    "type": "image_to_model",
+    "status": "success",
+    "task_id": "4da70424-30ef-4cf0-bb7f-4fdeb9920319",
+    "created_at": "2026-10-19T06:15:17.029668Z",
+    "completed_at": "2026-10-19T06:21:00.801377Z",
+    "credits_consumed": 50,
+    "output_dir": "SourceAssets/Tripo/LeftPavilion04/artifacts/model",
+    "files": [
+      "SourceAssets/Tripo/LeftPavilion04/artifacts/model/model.glb",
+      "SourceAssets/Tripo/LeftPavilion04/artifacts/model/rendered_image.webp",
+      "SourceAssets/Tripo/LeftPavilion04/artifacts/model/preview.png"
+    ],
+    "model_file": "SourceAssets/Tripo/LeftPavilion04/artifacts/model/model.glb",
+    "preview": "SourceAssets/Tripo/LeftPavilion04/artifacts/model/preview.png"
+  },
+  "costs": [
+    {
+      "stage": "reference",
+      "task_id": "f56c9dd8-008c-41b4-a6d5-d58bc2f7d3e1",
+      "credits_consumed": 5
+    },
+    {
+      "stage": "model",
+      "task_id": "4da70424-30ef-4cf0-bb7f-4fdeb9920319",
+      "credits_consumed": 50
+    }
+  ],
+  "total_credits": 55,
+  "local_conversion": {
+    "tool": "Blender",
+    "remote_credits": 0,
+    "report": "Project_TianNanGe/Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_ImportReport.json"
+  },
+  "import": {
+    "source": "SourceAssets/Tripo/LeftPavilion04/artifacts/model/model.glb",
+    "source_sha256": "b8164af428c9e70e6aba6c86fd823321011b46bd257ff31736046df74b8958a0",
+    "fbx": "LeftPavilion_H31_8K.fbx",
+    "materials": [
+      {
+        "index": 0,
+        "source_name": "tripo_material_4da70424-30ef-4cf0-bb7f-4fdeb9920319",
+        "fbx_mesh_prefix": "LeftPavilion_H31_8K_M00",
+        "maps": {
+          "base_color": {
+            "file": "LeftPavilion_H31_8K_BaseColor.png",
+            "width": 8192,
+            "height": 8192
+          },
+          "normal": {
+            "file": "LeftPavilion_H31_8K_Normal.png",
+            "width": 4096,
+            "height": 4096
+          },
+          "roughness": {
+            "file": "LeftPavilion_H31_8K_Roughness.png",
+            "width": 4096,
+            "height": 4096
+          },
+          "metallic": {
+            "file": "LeftPavilion_H31_8K_Metallic.png",
+            "width": 4096,
+            "height": 4096
+          },
+          "mask": {
+            "file": "LeftPavilion_H31_8K_MaskMap.png",
+            "width": 4096,
+            "height": 4096
+          }
+        },
+        "source_image_indices": {
+          "base_color": 0,
+          "normal": 2,
+          "metallic_roughness": 1
+        },
+        "normal_scale": 1.0,
+        "source_dimensions": {
+          "base_color": {
+            "width": 8192,
+            "height": 8192
+          },
+          "normal": {
+            "width": 4096,
+            "height": 4096
+          },
+          "metallic_roughness": {
+            "width": 4096,
+            "height": 4096
+          }
+        },
+        "alpha_mode": "OPAQUE",
+        "alpha_cutoff": 0.5,
+        "double_sided": false,
+        "texture_coordinates": {
+          "base_color": {
+            "texcoord": 0,
+            "transform": null
+          },
+          "normal": {
+            "texcoord": 0,
+            "transform": null
+          },
+          "metallic_roughness": {
+            "texcoord": 0,
+            "transform": null
+          }
+        },
+        "baked_factors": {
+          "base_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1.0,
+          "roughness": 1.0
+        }
+      }
+    ],
+    "hdrp_mask_channels": {
+      "R": "metallic",
+      "G": "1 (unoccluded)",
+      "B": "1",
+      "A": "1 - roughness"
+    },
+    "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+    "images_resized": false,
+    "uvs_repacked": false,
+    "geometry": {
+      "blender_version": "5.0.1",
+      "mesh_count": 1,
+      "triangles": 1441582,
+      "vertices": 768062,
+      "meshes": [
+        {
+          "name": "LeftPavilion_H31_8K_M00_000",
+          "source_name": "tripo_node_4da70424-30ef-4cf0-bb7f-4fdeb9920319",
+          "material_index": 0,
+          "vertices": 768062,
+          "triangles": 1441582,
+          "uv_layers": [
+            "UVMap"
+          ],
+          "uv_sha256": "02fa4bc98f3d54575eb790f49e199fab2b48123f185ab7c4fc97d2619894a59d"
+        }
+      ],
+      "bounds_blender_z_up": {
+        "min": [
+          -0.6656749248504639,
+          -0.6657464504241943,
+          -0.5
+        ],
+        "max": [
+          0.6656749248504639,
+          0.6657464504241943,
+          0.5
+        ],
+        "size": [
+          1.3313498497009277,
+          1.3314929008483887,
+          1.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bounds_fbx_y_up": {
+        "min": [
+          -0.6656749248504639,
+          -0.5,
+          -0.6657464504241943
+        ],
+        "max": [
+          0.6656749248504639,
+          0.5,
+          0.6657464504241943
+        ],
+        "size": [
+          1.3313498497009277,
+          1.0,
+          1.3314929008483887
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fbx_axes": {
+        "forward": "-Z",
+        "up": "Y"
+      },
+      "fbx_materials": 0,
+      "fbx_embedded_textures": 0
+    }
+  },
+  "installation": {
+    "status": "installed",
+    "scene": "Assets/TianNanGe/Scenes/TianNanGe_Main.unity",
+    "target": "TianNanGe_Blockout/Architecture/LeftPavilion",
+    "hiddenVisual": "Proxy_ReplaceWithTripo",
+    "sourcePrefabPreserved": "Assets/TianNanGe/Prefabs/Architecture/LeftPavilion.prefab",
+    "wrapperPrefab": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K.prefab",
+    "fbx": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K.fbx",
+    "material": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_HDRP.mat",
+    "shader": "HDRP/Lit",
+    "keywords": [
+      "_DISABLE_SSR_TRANSPARENT",
+      "_MASKMAP",
+      "_NORMALMAP",
+      "_NORMALMAP_TANGENT_SPACE"
+    ],
+    "textures": [
+      {
+        "channel": "baseColor",
+        "path": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_BaseColor.png",
+        "sourceWidth": 8192,
+        "sourceHeight": 8192,
+        "importedWidth": 8192,
+        "importedHeight": 8192,
+        "format": "BC7",
+        "maxTextureSize": 8192,
+        "mipmapEnabled": true,
+        "streamingMipmaps": true,
+        "sRGBTexture": true,
+        "textureType": "Default",
+        "compression": "CompressedHQ"
+      },
+      {
+        "channel": "normal",
+        "path": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_Normal.png",
+        "sourceWidth": 4096,
+        "sourceHeight": 4096,
+        "importedWidth": 4096,
+        "importedHeight": 4096,
+        "format": "BC7",
+        "maxTextureSize": 8192,
+        "mipmapEnabled": true,
+        "streamingMipmaps": true,
+        "sRGBTexture": false,
+        "textureType": "NormalMap",
+        "compression": "CompressedHQ"
+      },
+      {
+        "channel": "metallic",
+        "path": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_Metallic.png",
+        "sourceWidth": 4096,
+        "sourceHeight": 4096,
+        "importedWidth": 4096,
+        "importedHeight": 4096,
+        "format": "BC7",
+        "maxTextureSize": 8192,
+        "mipmapEnabled": true,
+        "streamingMipmaps": true,
+        "sRGBTexture": false,
+        "textureType": "Default",
+        "compression": "CompressedHQ"
+      },
+      {
+        "channel": "roughness",
+        "path": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_Roughness.png",
+        "sourceWidth": 4096,
+        "sourceHeight": 4096,
+        "importedWidth": 4096,
+        "importedHeight": 4096,
+        "format": "BC7",
+        "maxTextureSize": 8192,
+        "mipmapEnabled": true,
+        "streamingMipmaps": true,
+        "sRGBTexture": false,
+        "textureType": "Default",
+        "compression": "CompressedHQ"
+      },
+      {
+        "channel": "hdrpMask",
+        "path": "Assets/TianNanGe/Tripo/LeftPavilion04/LeftPavilion_H31_8K_MaskMap.png",
+        "sourceWidth": 4096,
+        "sourceHeight": 4096,
+        "importedWidth": 4096,
+        "importedHeight": 4096,
+        "format": "BC7",
+        "maxTextureSize": 8192,
+        "mipmapEnabled": true,
+        "streamingMipmaps": true,
+        "sRGBTexture": false,
+        "textureType": "Default",
+        "compression": "CompressedHQ"
+      }
+    ],
+    "modelUpAxis": "explicit=Y",
+    "rawModelBounds": {
+      "center": [
+        4.76837158e-07,
+        -5.96046448e-08,
+        -4.76837158e-07
+      ],
+      "size": [
+        1.33135,
+        1.00000012,
+        1.331493
+      ],
+      "min": [
+        -0.6656745,
+        -0.5000001,
+        -0.665747
+      ],
+      "max": [
+        0.665675461,
+        0.5,
+        0.665746033
+      ]
+    },
+    "yaw": 0.0,
+    "requestedWorldSize": [
+      4.896,
+      4.381,
+      3.384
+    ],
+    "oldWorldBounds": {
+      "center": [
+        -9.0,
+        0.82859993,
+        17.0
+      ],
+      "size": [
+        4.896,
+        4.3812,
+        3.38400269
+      ],
+      "min": [
+        -11.448,
+        -1.362,
+        15.3079987
+      ],
+      "max": [
+        -6.552,
+        3.01919985,
+        18.6920013
+      ]
+    },
+    "installedWorldBounds": {
+      "center": [
+        -9.0,
+        0.828500032,
+        17.0
+      ],
+      "size": [
+        4.89600039,
+        4.381,
+        3.384
+      ],
+      "min": [
+        -11.448,
+        -1.362,
+        15.308
+      ],
+      "max": [
+        -6.552,
+        3.019,
+        18.692
+      ]
+    },
+    "localPosition": [
+      0.0,
+      2.817361,
+      0.0
+    ],
+    "localScale": [
+      5.107598,
+      6.08472157,
+      3.52987218
+    ],
+    "rendererCount": 1,
+    "collidersBefore": 0,
+    "collidersAfter": 0,
+    "collisionUnchanged": true,
+    "sceneSaved": true
+  }
+}

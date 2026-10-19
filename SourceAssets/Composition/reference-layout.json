@@ -1,0 +1,21 @@
+{
+  "reference": "4TianNan1_4k_fb78c.jpg",
+  "referenceAspect": 2.0667008722,
+  "camera": "FristCamera",
+  "buildings": [
+    {"name":"MainPavilion","position":[8.8,1.35,22],"scale":[1.7,1.7,1.7]},
+    {"name":"MainHall_Walkable","position":[18,-0.15,30],"scale":[1.04,1.04,1.04]},
+    {"name":"FarPavilion","position":[1,5.5,36],"scale":[2.25,2.25,2.25]},
+    {"name":"LeftPavilion","position":[-9,2.5,22],"scale":[1.3,1.3,1.3]},
+    {"name":"GuestHouse_Walkable","position":[-14,2.8,30],"scale":[1.2,1.2,1.2]},
+    {"name":"TeaHouse_Walkable","position":[-8,-0.2,16],"scale":[1.05,1.05,1.05]},
+    {"name":"WatchTower_Walkable","position":[20,3,36],"scale":[1.3,1.3,1.3]},
+    {"name":"FarRight","position":[22,4,43],"scale":[1.5,1.5,1.5]}
+  ],
+  "supports": [
+    {"name":"Mountain_Main","building":"MainPavilion","height":27},
+    {"name":"Mountain_Left","building":"LeftPavilion","height":26},
+    {"name":"Mountain_Far","building":"FarPavilion","height":34},
+    {"name":"Mountain_FarRight","building":"FarRight","height":32}
+  ]
+}

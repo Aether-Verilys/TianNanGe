@@ -1,0 +1,164 @@
+{
+  "source": "SourceAssets/Tripo/TeaHouse05/artifacts/model/model.glb",
+  "source_sha256": "654beacfe1bf20c9b08438c7fcc9dd11594beff2cfc510425371b7d7a0e2d863",
+  "fbx": "TeaHouse_H31_8K.fbx",
+  "materials": [
+    {
+      "index": 0,
+      "source_name": "tripo_material_37971c44-1f73-4e6b-a7ec-6e3ec258282e",
+      "fbx_mesh_prefix": "TeaHouse_H31_8K_M00",
+      "maps": {
+        "base_color": {
+          "file": "TeaHouse_H31_8K_BaseColor.png",
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "file": "TeaHouse_H31_8K_Normal.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "roughness": {
+          "file": "TeaHouse_H31_8K_Roughness.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic": {
+          "file": "TeaHouse_H31_8K_Metallic.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "mask": {
+          "file": "TeaHouse_H31_8K_MaskMap.png",
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "source_image_indices": {
+        "base_color": 0,
+        "normal": 2,
+        "metallic_roughness": 1
+      },
+      "normal_scale": 1.0,
+      "source_dimensions": {
+        "base_color": {
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic_roughness": {
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "alpha_mode": "OPAQUE",
+      "alpha_cutoff": 0.5,
+      "double_sided": false,
+      "texture_coordinates": {
+        "base_color": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "normal": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "metallic_roughness": {
+          "texcoord": 0,
+          "transform": null
+        }
+      },
+      "baked_factors": {
+        "base_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic": 1.0,
+        "roughness": 1.0
+      }
+    }
+  ],
+  "hdrp_mask_channels": {
+    "R": "metallic",
+    "G": "1 (unoccluded)",
+    "B": "1",
+    "A": "1 - roughness"
+  },
+  "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+  "images_resized": false,
+  "uvs_repacked": false,
+  "geometry": {
+    "blender_version": "5.0.1",
+    "mesh_count": 1,
+    "triangles": 1419046,
+    "vertices": 751863,
+    "meshes": [
+      {
+        "name": "TeaHouse_H31_8K_M00_000",
+        "source_name": "tripo_node_37971c44-1f73-4e6b-a7ec-6e3ec258282e",
+        "material_index": 0,
+        "vertices": 751863,
+        "triangles": 1419046,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_sha256": "3ea203d50078639e6572b4e01017b25b2617faffb821c81650225656175f852d"
+      }
+    ],
+    "bounds_blender_z_up": {
+      "min": [
+        -0.5970569252967834,
+        -0.610734224319458,
+        -0.2271578311920166
+      ],
+      "max": [
+        0.5970569252967834,
+        0.610734224319458,
+        0.2271578311920166
+      ],
+      "size": [
+        1.194113850593567,
+        1.221468448638916,
+        0.4543156623840332
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bounds_fbx_y_up": {
+      "min": [
+        -0.5970569252967834,
+        -0.2271578311920166,
+        -0.610734224319458
+      ],
+      "max": [
+        0.5970569252967834,
+        0.2271578311920166,
+        0.610734224319458
+      ],
+      "size": [
+        1.194113850593567,
+        0.4543156623840332,
+        1.221468448638916
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fbx_axes": {
+      "forward": "-Z",
+      "up": "Y"
+    },
+    "fbx_materials": 0,
+    "fbx_embedded_textures": 0
+  }
+}

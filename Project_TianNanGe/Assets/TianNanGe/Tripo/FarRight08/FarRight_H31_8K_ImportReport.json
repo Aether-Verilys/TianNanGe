@@ -1,0 +1,164 @@
+{
+  "source": "SourceAssets/Tripo/FarRight08/artifacts/model/model.glb",
+  "source_sha256": "5e66d664c170410ae0cbe06870a6ecb44e3386f3dfba886cc8b8f95ca52e6544",
+  "fbx": "FarRight_H31_8K.fbx",
+  "materials": [
+    {
+      "index": 0,
+      "source_name": "tripo_material_9887f92d-71d9-4546-bfb2-e0938a1c2f64",
+      "fbx_mesh_prefix": "FarRight_H31_8K_M00",
+      "maps": {
+        "base_color": {
+          "file": "FarRight_H31_8K_BaseColor.png",
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "file": "FarRight_H31_8K_Normal.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "roughness": {
+          "file": "FarRight_H31_8K_Roughness.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic": {
+          "file": "FarRight_H31_8K_Metallic.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "mask": {
+          "file": "FarRight_H31_8K_MaskMap.png",
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "source_image_indices": {
+        "base_color": 0,
+        "normal": 2,
+        "metallic_roughness": 1
+      },
+      "normal_scale": 1.0,
+      "source_dimensions": {
+        "base_color": {
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic_roughness": {
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "alpha_mode": "OPAQUE",
+      "alpha_cutoff": 0.5,
+      "double_sided": false,
+      "texture_coordinates": {
+        "base_color": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "normal": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "metallic_roughness": {
+          "texcoord": 0,
+          "transform": null
+        }
+      },
+      "baked_factors": {
+        "base_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic": 1.0,
+        "roughness": 1.0
+      }
+    }
+  ],
+  "hdrp_mask_channels": {
+    "R": "metallic",
+    "G": "1 (unoccluded)",
+    "B": "1",
+    "A": "1 - roughness"
+  },
+  "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+  "images_resized": false,
+  "uvs_repacked": false,
+  "geometry": {
+    "blender_version": "5.0.1",
+    "mesh_count": 1,
+    "triangles": 1412005,
+    "vertices": 762565,
+    "meshes": [
+      {
+        "name": "FarRight_H31_8K_M00_000",
+        "source_name": "tripo_node_9887f92d-71d9-4546-bfb2-e0938a1c2f64",
+        "material_index": 0,
+        "vertices": 762565,
+        "triangles": 1412005,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_sha256": "09377fbd49e5123d711e1b452e676da1501a8beb28c5f821a6d4e8c5bf92a5a5"
+      }
+    ],
+    "bounds_blender_z_up": {
+      "min": [
+        -0.6390528678894043,
+        -0.6411049962043762,
+        -0.5
+      ],
+      "max": [
+        0.6390528678894043,
+        0.6411049962043762,
+        0.5
+      ],
+      "size": [
+        1.2781057357788086,
+        1.2822099924087524,
+        1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bounds_fbx_y_up": {
+      "min": [
+        -0.6390528678894043,
+        -0.5,
+        -0.6411049962043762
+      ],
+      "max": [
+        0.6390528678894043,
+        0.5,
+        0.6411049962043762
+      ],
+      "size": [
+        1.2781057357788086,
+        1.0,
+        1.2822099924087524
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fbx_axes": {
+      "forward": "-Z",
+      "up": "Y"
+    },
+    "fbx_materials": 0,
+    "fbx_embedded_textures": 0
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "source": "SourceAssets/Tripo/LeftPavilion04/artifacts/model/model.glb",
+  "source_sha256": "b8164af428c9e70e6aba6c86fd823321011b46bd257ff31736046df74b8958a0",
+  "fbx": "LeftPavilion_H31_8K.fbx",
+  "materials": [
+    {
+      "index": 0,
+      "source_name": "tripo_material_4da70424-30ef-4cf0-bb7f-4fdeb9920319",
+      "fbx_mesh_prefix": "LeftPavilion_H31_8K_M00",
+      "maps": {
+        "base_color": {
+          "file": "LeftPavilion_H31_8K_BaseColor.png",
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "file": "LeftPavilion_H31_8K_Normal.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "roughness": {
+          "file": "LeftPavilion_H31_8K_Roughness.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic": {
+          "file": "LeftPavilion_H31_8K_Metallic.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "mask": {
+          "file": "LeftPavilion_H31_8K_MaskMap.png",
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "source_image_indices": {
+        "base_color": 0,
+        "normal": 2,
+        "metallic_roughness": 1
+      },
+      "normal_scale": 1.0,
+      "source_dimensions": {
+        "base_color": {
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic_roughness": {
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "alpha_mode": "OPAQUE",
+      "alpha_cutoff": 0.5,
+      "double_sided": false,
+      "texture_coordinates": {
+        "base_color": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "normal": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "metallic_roughness": {
+          "texcoord": 0,
+          "transform": null
+        }
+      },
+      "baked_factors": {
+        "base_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic": 1.0,
+        "roughness": 1.0
+      }
+    }
+  ],
+  "hdrp_mask_channels": {
+    "R": "metallic",
+    "G": "1 (unoccluded)",
+    "B": "1",
+    "A": "1 - roughness"
+  },
+  "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+  "images_resized": false,
+  "uvs_repacked": false,
+  "geometry": {
+    "blender_version": "5.0.1",
+    "mesh_count": 1,
+    "triangles": 1441582,
+    "vertices": 768062,
+    "meshes": [
+      {
+        "name": "LeftPavilion_H31_8K_M00_000",
+        "source_name": "tripo_node_4da70424-30ef-4cf0-bb7f-4fdeb9920319",
+        "material_index": 0,
+        "vertices": 768062,
+        "triangles": 1441582,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_sha256": "02fa4bc98f3d54575eb790f49e199fab2b48123f185ab7c4fc97d2619894a59d"
+      }
+    ],
+    "bounds_blender_z_up": {
+      "min": [
+        -0.6656749248504639,
+        -0.6657464504241943,
+        -0.5
+      ],
+      "max": [
+        0.6656749248504639,
+        0.6657464504241943,
+        0.5
+      ],
+      "size": [
+        1.3313498497009277,
+        1.3314929008483887,
+        1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bounds_fbx_y_up": {
+      "min": [
+        -0.6656749248504639,
+        -0.5,
+        -0.6657464504241943
+      ],
+      "max": [
+        0.6656749248504639,
+        0.5,
+        0.6657464504241943
+      ],
+      "size": [
+        1.3313498497009277,
+        1.0,
+        1.3314929008483887
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fbx_axes": {
+      "forward": "-Z",
+      "up": "Y"
+    },
+    "fbx_materials": 0,
+    "fbx_embedded_textures": 0
+  }
+}

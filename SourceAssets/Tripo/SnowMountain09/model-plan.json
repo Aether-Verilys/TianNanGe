@@ -1,0 +1,36 @@
+{
+  "dry_run": true,
+  "valid": true,
+  "input": "SourceAssets/Tripo/SnowMountain09/snow-mountain-reference.png",
+  "model": "P2-20260801",
+  "model_reason": "explicit --model",
+  "steps": [
+    {
+      "name": "image-to-model",
+      "endpoint": "image-to-model",
+      "task_type": "image_to_model",
+      "payload": {
+        "input": "<upload:SourceAssets/Tripo/SnowMountain09/snow-mountain-reference.png>",
+        "model": "P2-20260801",
+        "face_limit": 25000,
+        "quad": false,
+        "texture": true,
+        "pbr": true,
+        "texture_quality": "extreme",
+        "texture_alignment": "original_image",
+        "orientation": "align_image",
+        "export_uv": true
+      }
+    }
+  ],
+  "pending_uploads": [
+    "SourceAssets/Tripo/SnowMountain09/snow-mountain-reference.png"
+  ],
+  "deliverables": [],
+  "candidates": 1,
+  "warnings": [],
+  "errors": [],
+  "cost_notes": [
+    "texture_quality extreme: higher price tier"
+  ]
+}

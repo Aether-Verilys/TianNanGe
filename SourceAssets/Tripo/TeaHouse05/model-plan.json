@@ -1,0 +1,33 @@
+{
+  "dry_run": true,
+  "valid": true,
+  "input": "SourceAssets/Tripo/TeaHouse05/tea-house-reference.png",
+  "model": "v3.1-20260211",
+  "model_reason": "explicit --model",
+  "steps": [
+    {
+      "name": "image-to-model",
+      "endpoint": "image-to-model",
+      "task_type": "image_to_model",
+      "payload": {
+        "input": "<upload:SourceAssets/Tripo/TeaHouse05/tea-house-reference.png>",
+        "model": "v3.1-20260211",
+        "texture": true,
+        "pbr": true,
+        "texture_quality": "extreme",
+        "texture_alignment": "original_image",
+        "orientation": "align_image"
+      }
+    }
+  ],
+  "pending_uploads": [
+    "SourceAssets/Tripo/TeaHouse05/tea-house-reference.png"
+  ],
+  "deliverables": [],
+  "candidates": 1,
+  "warnings": [],
+  "errors": [],
+  "cost_notes": [
+    "texture_quality extreme: higher price tier"
+  ]
+}

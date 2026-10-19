@@ -1,0 +1,51 @@
+{
+  "provider": "tripo",
+  "status": "success",
+  "adopted_reference": true,
+  "reference_reviewed": true,
+  "reference_source": "4TianNan1_4k_fb78c.jpg",
+  "reference_image": "SourceAssets/Tripo/WindingBridge10/winding-bridge-reference.png",
+  "sha256": "e37f9292901a4b9e81eb237b2056defd0c0173dc7d494691df03e8b3eb261647",
+  "width": 1024,
+  "height": 1024,
+  "previous_references": [
+    {
+      "provider": "tripo",
+      "model": "seedream_v5",
+      "reference_image": "SourceAssets/Tripo/WindingBridge10/reference-history/04e5c4519b3fe09eb6adc998f86365115242e580939147fe337debc820c29b4f/reference.png",
+      "sha256": "04e5c4519b3fe09eb6adc998f86365115242e580939147fe337debc820c29b4f",
+      "width": 1024,
+      "height": 1024,
+      "type": "image_to_image",
+      "status": "success",
+      "task_id": "12e144f0-e095-4984-9a50-aeafd9f43d02",
+      "created_at": "2026-10-19T08:54:22.996210Z",
+      "completed_at": "2026-10-19T08:54:54.006022Z",
+      "credits_consumed": 5,
+      "output_dir": "SourceAssets/Tripo/WindingBridge10/artifacts/reference",
+      "files": [
+        "SourceAssets/Tripo/WindingBridge10/artifacts/reference/generated_image.png",
+        "SourceAssets/Tripo/WindingBridge10/artifacts/reference/preview.png"
+      ],
+      "preview": "SourceAssets/Tripo/WindingBridge10/artifacts/reference/preview.png",
+      "superseded": true,
+      "archived_task_result": "SourceAssets/Tripo/WindingBridge10/reference-history/04e5c4519b3fe09eb6adc998f86365115242e580939147fe337debc820c29b4f/reference-result.json",
+      "reference_prompt": "Extract and reconstruct ONE complete ancient Chinese mountain bridge from the source image. Long narrow walkable stone deck with a moderate shallow S bend in PLAN VIEW, two gentle changes of direction; not a straight road, not a steep humpback. Continuous dark weathered timber balustrades and stone posts on both sides, pale snow on the deck, caps and rails. Clearly show the complete load-bearing structure BELOW the deck: several tall blue-grey masonry piers connected by sturdy stone arches, with visible arch openings. Piers descend well below the deck. One coherent connected bridge, open walkable entrance and exit. Show the entire asset, both endpoints and all supports in an elevated three-quarter side view with enough top view to read the bend, generous padding, realistic PBR materials, neutral diffuse light and plain light grey background. No mountains, ground, buildings, people, dragon, trees, water, text, watermark or collage.",
+      "archived_prompt": "SourceAssets/Tripo/WindingBridge10/reference-history/04e5c4519b3fe09eb6adc998f86365115242e580939147fe337debc820c29b4f/reference-prompt.txt"
+    }
+  ],
+  "adoption_submitted_tripo_task": false,
+  "model": "seedream_v5",
+  "type": "image_to_image",
+  "task_id": "ecf02cd3-c434-4b7e-aec6-08b569650b88",
+  "created_at": "2026-10-19T09:01:31.121587Z",
+  "completed_at": "2026-10-19T09:02:00.275813Z",
+  "credits_consumed": 5,
+  "output_dir": "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts",
+  "files": [
+    "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts/generated_image.png",
+    "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts/preview.png"
+  ],
+  "preview": "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts/preview.png",
+  "reference_prompt": "Change this bridge to an unmistakable ANGULAR S SHAPE in horizontal PLAN VIEW. This is the critical change: the first third goes straight, the middle third turns RIGHT by 35 degrees, then the last third turns LEFT by 35 degrees, making a displaced dogleg route. NOT a straight bridge. Show it from a HIGH elevated three-quarter view so BOTH turns of the complete deck are clearly visible. Preserve its snowy narrow stone deck, dark wood two-rail balustrades, stone posts, tall stone piers and open arches BELOW the deck. All railings, piers and arches follow the same winding deck. Keep the walkway level and both ends open. Add diagonal timber braces under the deck edges. One continuous complete bridge only, entire asset and supports in frame with generous padding. Plain light-grey background, realistic PBR materials, soft neutral light. No scenery, mountains, buildings, people, dragon, water, trees, text, labels or collage."
+}

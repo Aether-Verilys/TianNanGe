@@ -1,0 +1,109 @@
+{
+  "assetFolder": "Assets/TianNanGe/Tripo/SnowMountain09",
+  "name": "SnowMountain_P20_8K",
+  "sourcePlan": "../SourceAssets/Tripo/SnowMountain09/model-plan.json",
+  "upAxis": "Y",
+  "expectedTextureSize": 8192,
+  "triangleTolerance": 1000,
+  "instances": [
+    {
+      "name": "Tripo_Main",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_Main",
+      "building": "MainPavilion",
+      "centerX": 8.8,
+      "centerZ": 22,
+      "width": 24,
+      "height": 10,
+      "depth": 22,
+      "topY": 0.8875,
+      "yaw": 30
+    },
+    {
+      "name": "Tripo_Left",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_Left",
+      "building": "LeftPavilion",
+      "centerX": -9,
+      "centerZ": 22,
+      "width": 18,
+      "height": 9,
+      "depth": 16,
+      "topY": 2.1275,
+      "yaw": 30
+    },
+    {
+      "name": "Tripo_Far",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_Far",
+      "building": "FarPavilion",
+      "centerX": 1,
+      "centerZ": 39,
+      "width": 28,
+      "height": 12,
+      "depth": 22,
+      "topY": 4.91375,
+      "yaw": 30
+    },
+    {
+      "name": "Tripo_FarRight",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_FarRight",
+      "building": "FarRight",
+      "centerX": 22,
+      "centerZ": 43,
+      "width": 18,
+      "height": 7.5,
+      "depth": 16,
+      "topY": 3.5825,
+      "yaw": 45
+    },
+    {
+      "name": "Tripo_TeaHouse",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_TeaHouse",
+      "building": "TeaHouse_Walkable",
+      "centerX": -8,
+      "centerZ": 16,
+      "width": 20,
+      "height": 8,
+      "depth": 18,
+      "topY": -0.658,
+      "yaw": 30
+    },
+    {
+      "name": "Tripo_GuestHouse",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_GuestHouse",
+      "building": "GuestHouse_Walkable",
+      "centerX": -14,
+      "centerZ": 30,
+      "width": 25,
+      "height": 9,
+      "depth": 22,
+      "topY": 2.288,
+      "yaw": 30
+    },
+    {
+      "name": "Tripo_WatchTower",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_WatchTower",
+      "building": "WatchTower_Walkable",
+      "centerX": 20,
+      "centerZ": 36,
+      "width": 22,
+      "height": 7.5,
+      "depth": 22,
+      "topY": 2.452,
+      "yaw": 30
+    },
+    {
+      "name": "Tripo_MainHall",
+      "supportRoot": "TianNanGe_Blockout/Mountains/Mountain_MainHall",
+      "building": "MainHall_Walkable",
+      "centerX": 18,
+      "centerZ": 30,
+      "width": 28,
+      "height": 9,
+      "depth": 22,
+      "topY": -0.6044,
+      "yaw": 30
+    }
+  ],
+  "foundations": {
+    "buildBridgeStairs": true
+  }
+}

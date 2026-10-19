@@ -1,0 +1,14 @@
+{
+  "type": "image_to_image",
+  "status": "success",
+  "task_id": "ecf02cd3-c434-4b7e-aec6-08b569650b88",
+  "created_at": "2026-10-19T09:01:31.121587Z",
+  "completed_at": "2026-10-19T09:02:00.275813Z",
+  "credits_consumed": 5,
+  "output_dir": "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts",
+  "files": [
+    "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts/generated_image.png",
+    "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts/preview.png"
+  ],
+  "preview": "SourceAssets/Tripo/WindingBridge10/reference-v2/artifacts/preview.png"
+}

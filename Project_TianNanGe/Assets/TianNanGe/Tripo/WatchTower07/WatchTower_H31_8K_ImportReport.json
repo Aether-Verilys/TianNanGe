@@ -1,0 +1,164 @@
+{
+  "source": "SourceAssets/Tripo/WatchTower07/artifacts/model/model.glb",
+  "source_sha256": "e9f5b26794360b67c06c0dca5202668aaac6477977087762f8a6191f89d3584c",
+  "fbx": "WatchTower_H31_8K.fbx",
+  "materials": [
+    {
+      "index": 0,
+      "source_name": "tripo_material_a27f16f0-fa8d-447c-b78e-658620a258db",
+      "fbx_mesh_prefix": "WatchTower_H31_8K_M00",
+      "maps": {
+        "base_color": {
+          "file": "WatchTower_H31_8K_BaseColor.png",
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "file": "WatchTower_H31_8K_Normal.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "roughness": {
+          "file": "WatchTower_H31_8K_Roughness.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic": {
+          "file": "WatchTower_H31_8K_Metallic.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "mask": {
+          "file": "WatchTower_H31_8K_MaskMap.png",
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "source_image_indices": {
+        "base_color": 0,
+        "normal": 2,
+        "metallic_roughness": 1
+      },
+      "normal_scale": 1.0,
+      "source_dimensions": {
+        "base_color": {
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic_roughness": {
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "alpha_mode": "OPAQUE",
+      "alpha_cutoff": 0.5,
+      "double_sided": false,
+      "texture_coordinates": {
+        "base_color": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "normal": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "metallic_roughness": {
+          "texcoord": 0,
+          "transform": null
+        }
+      },
+      "baked_factors": {
+        "base_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic": 1.0,
+        "roughness": 1.0
+      }
+    }
+  ],
+  "hdrp_mask_channels": {
+    "R": "metallic",
+    "G": "1 (unoccluded)",
+    "B": "1",
+    "A": "1 - roughness"
+  },
+  "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+  "images_resized": false,
+  "uvs_repacked": false,
+  "geometry": {
+    "blender_version": "5.0.1",
+    "mesh_count": 1,
+    "triangles": 1466478,
+    "vertices": 774674,
+    "meshes": [
+      {
+        "name": "WatchTower_H31_8K_M00_000",
+        "source_name": "tripo_node_a27f16f0-fa8d-447c-b78e-658620a258db",
+        "material_index": 0,
+        "vertices": 774674,
+        "triangles": 1466478,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_sha256": "abc80c4b2301124f038af5e76644ef46ecb6a61bcb5e2262f36013ba46694c58"
+      }
+    ],
+    "bounds_blender_z_up": {
+      "min": [
+        -0.43731459975242615,
+        -0.43644580245018005,
+        -0.5
+      ],
+      "max": [
+        0.43731459975242615,
+        0.43644580245018005,
+        0.5
+      ],
+      "size": [
+        0.8746291995048523,
+        0.8728916049003601,
+        1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bounds_fbx_y_up": {
+      "min": [
+        -0.43731459975242615,
+        -0.5,
+        -0.43644580245018005
+      ],
+      "max": [
+        0.43731459975242615,
+        0.5,
+        0.43644580245018005
+      ],
+      "size": [
+        0.8746291995048523,
+        1.0,
+        0.8728916049003601
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fbx_axes": {
+      "forward": "-Z",
+      "up": "Y"
+    },
+    "fbx_materials": 0,
+    "fbx_embedded_textures": 0
+  }
+}

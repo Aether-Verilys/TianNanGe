@@ -1,0 +1,33 @@
+{
+  "scene": "Assets/TianNanGe/Scenes/TianNanGe_Main.unity",
+  "scene_saved": true,
+  "mountain_model": "P2-20260801",
+  "source_triangles": 25380,
+  "requested_face_limit": 25000,
+  "accepted_triangle_tolerance": 1000,
+  "mountain_instance_count": 8,
+  "original_geometry_preserved": true,
+  "foundation_status": "installed",
+  "foundation_count": 8,
+  "foundation_contacts": 648,
+  "all_foundation_feet_embedded": true,
+  "visible_collision_top_checks_passed": true,
+  "stairs": {
+    "status": "installed",
+    "startZ": 25.25,
+    "endZ": 31.8105,
+    "startY": 0.065,
+    "endY": 5.01875,
+    "startX": 0.35,
+    "endX": 1.0,
+    "width": 2.7,
+    "steps": 28,
+    "riser": 0.176919654,
+    "tread": 0.234303549,
+    "masonryBottom": -0.209999472,
+    "visibleColliderBoxes": 56
+  },
+  "preview": "Project_TianNanGe/Assets/Captures/tripo-mountain-final.png",
+  "overview": "Project_TianNanGe/Assets/Captures/tripo-mountain-overview-final.png",
+  "git_action": "local_only_no_commit_or_push"
+}

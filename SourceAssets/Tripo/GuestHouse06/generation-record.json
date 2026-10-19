@@ -1,0 +1,254 @@
+{
+  "building_id": "GuestHouse06",
+  "reference_source": "4TianNan1_4k_fb78c.jpg",
+  "reference_image": "SourceAssets/Tripo/GuestHouse06/guest-house-reference.png",
+  "reference_prompt": "Extract and complete ONE two-storey Chinese timber guesthouse from the clustered LEFT background roofs behind the dragon. Long rectangular guesthouse with two layered sweeping blue-grey tiled roofs, an upper balcony with thin timber railings, dark timber frame, muted ochre columns and dougong brackets, regular lattice windows, clearly open central ground-floor doorway. Shallow stone plinth and short front steps, coherent complete obscured sides. Light patchy snow on roofs and ledges, visible tile courses. Full single-building silhouette with padding, near-front three-quarter view with little right side visible, mild long-lens perspective. Realistic material details, neutral diffuse studio lighting, plain light grey background. No people, dragon, bridge, ropes, landscape, neighboring buildings, text, watermark, detached parts or collage. One asset for 3D reconstruction.",
+  "reference_generation": {
+    "type": "image_to_image",
+    "status": "success",
+    "task_id": "553456a6-eab8-46d7-97d0-22c8406e3a2a",
+    "created_at": "2026-10-19T06:40:49.927101Z",
+    "completed_at": "2026-10-19T06:41:20.022493Z",
+    "credits_consumed": 5,
+    "output_dir": "SourceAssets/Tripo/GuestHouse06/artifacts/reference",
+    "files": [
+      "SourceAssets/Tripo/GuestHouse06/artifacts/reference/generated_image.png",
+      "SourceAssets/Tripo/GuestHouse06/artifacts/reference/preview.png"
+    ],
+    "preview": "SourceAssets/Tripo/GuestHouse06/artifacts/reference/preview.png"
+  },
+  "model_generation": {
+    "model": "v3.1-20260211",
+    "texture_quality": "extreme",
+    "pbr": true,
+    "candidates": 1,
+    "type": "image_to_model",
+    "status": "success",
+    "task_id": "06728548-371b-4fec-94da-eb958d7cefab",
+    "created_at": "2026-10-19T06:43:28.096770Z",
+    "completed_at": "2026-10-19T06:47:17.037845Z",
+    "credits_consumed": 50,
+    "output_dir": "SourceAssets/Tripo/GuestHouse06/artifacts/model",
+    "files": [
+      "SourceAssets/Tripo/GuestHouse06/artifacts/model/model.glb",
+      "SourceAssets/Tripo/GuestHouse06/artifacts/model/rendered_image.webp",
+      "SourceAssets/Tripo/GuestHouse06/artifacts/model/preview.png"
+    ],
+    "model_file": "SourceAssets/Tripo/GuestHouse06/artifacts/model/model.glb",
+    "preview": "SourceAssets/Tripo/GuestHouse06/artifacts/model/preview.png"
+  },
+  "costs": [
+    {
+      "stage": "reference",
+      "task_id": "553456a6-eab8-46d7-97d0-22c8406e3a2a",
+      "credits_consumed": 5
+    },
+    {
+      "stage": "model",
+      "task_id": "06728548-371b-4fec-94da-eb958d7cefab",
+      "credits_consumed": 50
+    }
+  ],
+  "total_credits": 55,
+  "local_conversion": {
+    "tool": "Blender",
+    "remote_credits": 0,
+    "report": "Project_TianNanGe/Assets/TianNanGe/Tripo/GuestHouse06/GuestHouse_H31_8K_ImportReport.json"
+  },
+  "import": {
+    "source": "SourceAssets/Tripo/GuestHouse06/artifacts/model/model.glb",
+    "source_sha256": "9e4186abed9e7d4aca824f4587d67f44b1bf705ad02e0d994ddcc27083c9dbc8",
+    "fbx": "GuestHouse_H31_8K.fbx",
+    "materials": [
+      {
+        "index": 0,
+        "source_name": "tripo_material_06728548-371b-4fec-94da-eb958d7cefab",
+        "fbx_mesh_prefix": "GuestHouse_H31_8K_M00",
+        "maps": {
+          "base_color": {
+            "file": "GuestHouse_H31_8K_BaseColor.png",
+            "width": 8192,
+            "height": 8192
+          },
+          "normal": {
+            "file": "GuestHouse_H31_8K_Normal.png",
+            "width": 4096,
+            "height": 4096
+          },
+          "roughness": {
+            "file": "GuestHouse_H31_8K_Roughness.png",
+            "width": 4096,
+            "height": 4096
+          },
+          "metallic": {
+            "file": "GuestHouse_H31_8K_Metallic.png",
+            "width": 4096,
+            "height": 4096
+          },
+          "mask": {
+            "file": "GuestHouse_H31_8K_MaskMap.png",
+            "width": 4096,
+            "height": 4096
+          }
+        },
+        "source_image_indices": {
+          "base_color": 0,
+          "normal": 2,
+          "metallic_roughness": 1
+        },
+        "normal_scale": 1.0,
+        "source_dimensions": {
+          "base_color": {
+            "width": 8192,
+            "height": 8192
+          },
+          "normal": {
+            "width": 4096,
+            "height": 4096
+          },
+          "metallic_roughness": {
+            "width": 4096,
+            "height": 4096
+          }
+        },
+        "alpha_mode": "OPAQUE",
+        "alpha_cutoff": 0.5,
+        "double_sided": false,
+        "texture_coordinates": {
+          "base_color": {
+            "texcoord": 0,
+            "transform": null
+          },
+          "normal": {
+            "texcoord": 0,
+            "transform": null
+          },
+          "metallic_roughness": {
+            "texcoord": 0,
+            "transform": null
+          }
+        },
+        "baked_factors": {
+          "base_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1.0,
+          "roughness": 1.0
+        }
+      }
+    ],
+    "hdrp_mask_channels": {
+      "R": "metallic",
+      "G": "1 (unoccluded)",
+      "B": "1",
+      "A": "1 - roughness"
+    },
+    "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+    "images_resized": false,
+    "uvs_repacked": false,
+    "geometry": {
+      "blender_version": "5.0.1",
+      "mesh_count": 1,
+      "triangles": 1477986,
+      "vertices": 779674,
+      "meshes": [
+        {
+          "name": "GuestHouse_H31_8K_M00_000",
+          "source_name": "tripo_node_06728548-371b-4fec-94da-eb958d7cefab",
+          "material_index": 0,
+          "vertices": 779674,
+          "triangles": 1477986,
+          "uv_layers": [
+            "UVMap"
+          ],
+          "uv_sha256": "f3ed6f281c67012bfa989e5e4405b83f4bff84d5709764fd40a76faa19a14d25"
+        }
+      ],
+      "bounds_blender_z_up": {
+        "min": [
+          -0.49687930941581726,
+          -0.5526520013809204,
+          -0.26844295859336853
+        ],
+        "max": [
+          0.49687930941581726,
+          0.5526520013809204,
+          0.26844295859336853
+        ],
+        "size": [
+          0.9937586188316345,
+          1.1053040027618408,
+          0.5368859171867371
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bounds_fbx_y_up": {
+        "min": [
+          -0.49687930941581726,
+          -0.26844295859336853,
+          -0.5526520013809204
+        ],
+        "max": [
+          0.49687930941581726,
+          0.26844295859336853,
+          0.5526520013809204
+        ],
+        "size": [
+          0.9937586188316345,
+          0.5368859171867371,
+          1.1053040027618408
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fbx_axes": {
+        "forward": "-Z",
+        "up": "Y"
+      },
+      "fbx_materials": 0,
+      "fbx_embedded_textures": 0
+    }
+  },
+  "installation": {
+    "status": "installed",
+    "scene": "Assets/TianNanGe/Scenes/TianNanGe_Main.unity",
+    "target": "TianNanGe_Blockout/Architecture/GuestHouse_Walkable",
+    "hiddenVisual": "Visual",
+    "sourcePrefabPreserved": "Assets/TianNanGe/Prefabs/Architecture/Walkable/GuestHouse_Walkable.prefab",
+    "wrapperPrefab": "Assets/TianNanGe/Tripo/GuestHouse06/GuestHouse_H31_8K.prefab",
+    "fbx": "Assets/TianNanGe/Tripo/GuestHouse06/GuestHouse_H31_8K.fbx",
+    "material": "Assets/TianNanGe/Tripo/GuestHouse06/GuestHouse_H31_8K_HDRP.mat",
+    "shader": "HDRP/Lit",
+    "yaw": 0.0,
+    "requestedWorldSize": [
+      7.5,
+      5.556,
+      6.979
+    ],
+    "localPosition": [
+      0.0,
+      3.34400034,
+      -0.4470622
+    ],
+    "localScale": [
+      10.0628071,
+      13.7980909,
+      8.418799
+    ],
+    "rendererCount": 14,
+    "collidersBefore": 27,
+    "collidersAfter": 27,
+    "collisionUnchanged": true,
+    "sceneSaved": true
+  }
+}

@@ -56,3 +56,4 @@ __pycache__/
 ._*
 Thumbs.db
 Desktop.ini
+/SourceAssets/Tripo/**/artifacts/

@@ -1,0 +1,164 @@
+{
+  "source": "SourceAssets/Tripo/MainHall02/tripo-out/tripo-out/tiannange-main-hall-h31-8k-88b1eed7/model.glb",
+  "source_sha256": "1f7d581b2bbb0069aa6f052003a3255dcf85cf807513e4ad01e1c27d1b38540f",
+  "fbx": "MainHall_H31_8K.fbx",
+  "materials": [
+    {
+      "index": 0,
+      "source_name": "tripo_material_88b1eed7-3104-45d9-b623-ab1d7bf6bfd3",
+      "fbx_mesh_prefix": "MainHall_H31_8K_M00",
+      "maps": {
+        "base_color": {
+          "file": "MainHall_H31_8K_BaseColor.png",
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "file": "MainHall_H31_8K_Normal.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "roughness": {
+          "file": "MainHall_H31_8K_Roughness.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic": {
+          "file": "MainHall_H31_8K_Metallic.png",
+          "width": 4096,
+          "height": 4096
+        },
+        "mask": {
+          "file": "MainHall_H31_8K_MaskMap.png",
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "source_image_indices": {
+        "base_color": 0,
+        "normal": 2,
+        "metallic_roughness": 1
+      },
+      "normal_scale": 1.0,
+      "source_dimensions": {
+        "base_color": {
+          "width": 8192,
+          "height": 8192
+        },
+        "normal": {
+          "width": 4096,
+          "height": 4096
+        },
+        "metallic_roughness": {
+          "width": 4096,
+          "height": 4096
+        }
+      },
+      "alpha_mode": "OPAQUE",
+      "alpha_cutoff": 0.5,
+      "double_sided": false,
+      "texture_coordinates": {
+        "base_color": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "normal": {
+          "texcoord": 0,
+          "transform": null
+        },
+        "metallic_roughness": {
+          "texcoord": 0,
+          "transform": null
+        }
+      },
+      "baked_factors": {
+        "base_color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic": 1.0,
+        "roughness": 1.0
+      }
+    }
+  ],
+  "hdrp_mask_channels": {
+    "R": "metallic",
+    "G": "1 (unoccluded)",
+    "B": "1",
+    "A": "1 - roughness"
+  },
+  "normal_convention": "glTF tangent space / OpenGL (+Y); source channels preserved",
+  "images_resized": false,
+  "uvs_repacked": false,
+  "geometry": {
+    "blender_version": "5.0.1",
+    "mesh_count": 1,
+    "triangles": 1429972,
+    "vertices": 791077,
+    "meshes": [
+      {
+        "name": "MainHall_H31_8K_M00_000",
+        "source_name": "tripo_node_88b1eed7-3104-45d9-b623-ab1d7bf6bfd3",
+        "material_index": 0,
+        "vertices": 791077,
+        "triangles": 1429972,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_sha256": "d2862ec195144b3ae2c3feb8de227e630226b086491dc7f3416ef348c233b6f4"
+      }
+    ],
+    "bounds_blender_z_up": {
+      "min": [
+        -0.6077427864074707,
+        -0.6245867609977722,
+        -0.37055733799934387
+      ],
+      "max": [
+        0.6077427864074707,
+        0.6245867609977722,
+        0.37055733799934387
+      ],
+      "size": [
+        1.2154855728149414,
+        1.2491735219955444,
+        0.7411146759986877
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bounds_fbx_y_up": {
+      "min": [
+        -0.6077427864074707,
+        -0.37055733799934387,
+        -0.6245867609977722
+      ],
+      "max": [
+        0.6077427864074707,
+        0.37055733799934387,
+        0.6245867609977722
+      ],
+      "size": [
+        1.2154855728149414,
+        0.7411146759986877,
+        1.2491735219955444
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fbx_axes": {
+      "forward": "-Z",
+      "up": "Y"
+    },
+    "fbx_materials": 0,
+    "fbx_embedded_textures": 0
+  }
+}
